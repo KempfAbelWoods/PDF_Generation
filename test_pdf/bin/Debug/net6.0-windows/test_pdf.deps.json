@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "test_pdf/1.0.0": {
         "dependencies": {
-          "PDFsharp": "6.0.0-preview-2",
+          "PDFsharp-WPF": "6.0.0-preview-2",
+          "Syncfusion.Pdf.Wpf": "21.2.6",
           "System.Drawing.Common": "8.0.0-preview.2.23128.3",
           "System.Text.Encoding.CodePages": "8.0.0-preview.4.23259.5"
         },
@@ -181,43 +182,71 @@
           }
         }
       },
-      "PDFsharp/6.0.0-preview-2": {
+      "PDFsharp-WPF/6.0.0-preview-2": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "6.0.0",
           "Microsoft.Extensions.Logging.Console": "6.0.0"
         },
         "runtime": {
-          "lib/net6.0/PdfSharp.Charting.dll": {
+          "lib/net6.0-windows7.0/PdfSharp-wpf.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           },
-          "lib/net6.0/PdfSharp.Quality.dll": {
+          "lib/net6.0-windows7.0/PdfSharp.Charting-wpf.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           },
-          "lib/net6.0/PdfSharp.Snippets.dll": {
+          "lib/net6.0-windows7.0/PdfSharp.Quality-wpf.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           },
-          "lib/net6.0/PdfSharp.System.dll": {
+          "lib/net6.0-windows7.0/PdfSharp.Snippets-wpf.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           },
-          "lib/net6.0/PdfSharp.WPFonts.dll": {
+          "lib/net6.0-windows7.0/PdfSharp.System.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           },
-          "lib/net6.0/PdfSharp.dll": {
+          "lib/net6.0-windows7.0/PdfSharp.WPFonts.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           }
         },
         "resources": {
-          "lib/net6.0/de/PdfSharp.Charting.resources.dll": {
+          "lib/net6.0-windows7.0/de/PdfSharp-wpf.resources.dll": {
             "locale": "de"
           },
-          "lib/net6.0/de/PdfSharp.resources.dll": {
+          "lib/net6.0-windows7.0/de/PdfSharp.Charting-wpf.resources.dll": {
             "locale": "de"
+          }
+        }
+      },
+      "Syncfusion.Compression.Base/21.2.6": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "21.2.6.0",
+            "fileVersion": "21.2.6.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/21.2.6": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "21.2.6.0",
+            "fileVersion": "21.2.6.0"
+          }
+        }
+      },
+      "Syncfusion.Pdf.Wpf/21.2.6": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "21.2.6",
+          "Syncfusion.Licensing": "21.2.6"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "assemblyVersion": "21.2.6.0",
+            "fileVersion": "21.2.6.0"
           }
         }
       },
@@ -367,12 +396,33 @@
       "path": "microsoft.win32.systemevents/8.0.0-preview.2.23128.3",
       "hashPath": "microsoft.win32.systemevents.8.0.0-preview.2.23128.3.nupkg.sha512"
     },
-    "PDFsharp/6.0.0-preview-2": {
+    "PDFsharp-WPF/6.0.0-preview-2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-da/MloAxfzWaLwg4RY4HpzH9Sk545fUcJ7JlSJTeUZGEolgJz97BH0hg/BzyowKIzYngRLdCkHQGUT7oejA9/Q==",
-      "path": "pdfsharp/6.0.0-preview-2",
-      "hashPath": "pdfsharp.6.0.0-preview-2.nupkg.sha512"
+      "sha512": "sha512-SdtLUmFfxwvEY5Tdvp8CvmdKbVv5k3IIcch+UUAs8ejGi8tC4jdGgoa0NcbfHYuGNvkLXD1MPmSp0ukMx5njaw==",
+      "path": "pdfsharp-wpf/6.0.0-preview-2",
+      "hashPath": "pdfsharp-wpf.6.0.0-preview-2.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Base/21.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xIExxXXhYthA1iZcMujgBX3ct/qFQuq5zxUIkHuajKuBnOD2UpX5DkTQcAf8/pNAaKezIGFHzQrsRuMp+qI/lQ==",
+      "path": "syncfusion.compression.base/21.2.6",
+      "hashPath": "syncfusion.compression.base.21.2.6.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/21.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1HbmjYmpI+KsaDYIEeqLuqVECL8hM6+T6Hem6rkCoYLoljUx+6X1oKxJs0qhsPo0bCtng1le8GG6j0HQF6B/mg==",
+      "path": "syncfusion.licensing/21.2.6",
+      "hashPath": "syncfusion.licensing.21.2.6.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.Wpf/21.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5vyfoizlTr6FJVHJcKgZerun7mZVEF64cvJHYL1L3qmfs3qDGa5+5az4EMlaSvXgQCD9SHHNohxKtkLW7kDRfw==",
+      "path": "syncfusion.pdf.wpf/21.2.6",
+      "hashPath": "syncfusion.pdf.wpf.21.2.6.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "type": "package",

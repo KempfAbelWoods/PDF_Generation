@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SIkys1fFPRc8LsWBRr2uawN3uwz7ZQe19zBfb3dk/9712uHAL6Fvzp4mEmv9D5m+GrPD6Nee4NIQfUy5lD41iw==",
+  "dgSpecHash": "wFagfksJN0hwuAnbJs1XkeVAN2ttPXrBbMNoYPvaPoySAlSVp0rIeNGZS5r8wr3qSbZ52an9ih3a7QVLoWcu7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lauritz Abel\\RiderProjects\\test_pdf\\test_pdf\\test_pdf.csproj",
+  "projectFilePath": "C:\\Users\\Lauritz Abel\\Desktop\\Studium\\Projektlabor\\PDF_Generation\\test_pdf\\test_pdf.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -17,7 +17,10 @@
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0-preview.2.23128.3\\microsoft.win32.systemevents.8.0.0-preview.2.23128.3.nupkg.sha512",
-    "C:\\Users\\Lauritz Abel\\.nuget\\packages\\pdfsharp\\6.0.0-preview-2\\pdfsharp.6.0.0-preview-2.nupkg.sha512",
+    "C:\\Users\\Lauritz Abel\\.nuget\\packages\\pdfsharp-wpf\\6.0.0-preview-2\\pdfsharp-wpf.6.0.0-preview-2.nupkg.sha512",
+    "C:\\Users\\Lauritz Abel\\.nuget\\packages\\syncfusion.compression.base\\21.2.6\\syncfusion.compression.base.21.2.6.nupkg.sha512",
+    "C:\\Users\\Lauritz Abel\\.nuget\\packages\\syncfusion.licensing\\21.2.6\\syncfusion.licensing.21.2.6.nupkg.sha512",
+    "C:\\Users\\Lauritz Abel\\.nuget\\packages\\syncfusion.pdf.wpf\\21.2.6\\syncfusion.pdf.wpf.21.2.6.nupkg.sha512",
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\system.drawing.common\\8.0.0-preview.2.23128.3\\system.drawing.common.8.0.0-preview.2.23128.3.nupkg.sha512",
     "C:\\Users\\Lauritz Abel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

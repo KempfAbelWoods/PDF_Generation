@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lauritz Abel\\RiderProjects\\test_pdf\\test_pdf\\test_pdf.csproj": {}
+    "C:\\Users\\Lauritz Abel\\Desktop\\Studium\\Projektlabor\\PDF_Generation\\test_pdf\\test_pdf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lauritz Abel\\RiderProjects\\test_pdf\\test_pdf\\test_pdf.csproj": {
+    "C:\\Users\\Lauritz Abel\\Desktop\\Studium\\Projektlabor\\PDF_Generation\\test_pdf\\test_pdf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lauritz Abel\\RiderProjects\\test_pdf\\test_pdf\\test_pdf.csproj",
+        "projectUniqueName": "C:\\Users\\Lauritz Abel\\Desktop\\Studium\\Projektlabor\\PDF_Generation\\test_pdf\\test_pdf.csproj",
         "projectName": "test_pdf",
-        "projectPath": "C:\\Users\\Lauritz Abel\\RiderProjects\\test_pdf\\test_pdf\\test_pdf.csproj",
+        "projectPath": "C:\\Users\\Lauritz Abel\\Desktop\\Studium\\Projektlabor\\PDF_Generation\\test_pdf\\test_pdf.csproj",
         "packagesPath": "C:\\Users\\Lauritz Abel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lauritz Abel\\RiderProjects\\test_pdf\\test_pdf\\obj\\",
+        "outputPath": "C:\\Users\\Lauritz Abel\\Desktop\\Studium\\Projektlabor\\PDF_Generation\\test_pdf\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lauritz Abel\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,9 +38,13 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "PDFsharp": {
+            "PDFsharp-WPF": {
               "target": "Package",
               "version": "[6.0.0-preview-2, )"
+            },
+            "Syncfusion.Pdf.Wpf": {
+              "target": "Package",
+              "version": "[21.2.6, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
