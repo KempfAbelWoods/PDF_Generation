@@ -71,12 +71,38 @@ namespace test_pdf
                 XFont font = new XFont("Verdana", 10);
                                                        
                 // Position
-                for (int i = 0; i < 11; i++)
+                for (int i = 0; i < 13; i++)
                 {
-                    gfx.DrawString("Position"+i.ToString(), font, XBrushes.Black, new XRect(page1.Width/12, -490+(i*15), page1.Width, page1.Height), XStringFormats.BottomLeft);
+                    gfx.DrawString("Position"+i.ToString(), font, XBrushes.Blue, new XRect(page1.Width/12, -490+(i*15), page1.Width, page1.Height), XStringFormats.BottomLeft);
                 }
                 
+                // Menge
+                for (int i = 0; i < 13; i++)
+                {
+                    gfx.DrawString("Menge"+i.ToString(), font, XBrushes.Blue, new XRect(page1.Width/2.05, -490+(i*15), page1.Width, page1.Height), XStringFormats.BottomLeft);
+                }
                
+                // Einzelpreis 
+                for (int i = 0; i < 13; i++)
+                {
+                    gfx.DrawString("Einzelpreis"+i.ToString(), font, XBrushes.Blue, new XRect(page1.Width/1.61, -490+(i*15), page1.Width, page1.Height), XStringFormats.BottomLeft);
+                }
+                
+                // Gesamtpreis Pos
+                for (int i = 0; i < 13; i++)
+                {
+                    gfx.DrawString("Positionpreis"+i.ToString(), font, XBrushes.Blue, new XRect(page1.Width/1.26, -490+(i*15), page1.Width, page1.Height), XStringFormats.BottomLeft);
+                }
+               //Rechnungsbetrag
+                gfx.DrawString("Gesamtpreis", font, XBrushes.Blue, new XRect(page1.Width/1.26, -280, page1.Width, page1.Height), XStringFormats.BottomLeft); 
+                
+                //Adresse
+                gfx.DrawString("Name", font, XBrushes.Blue, new XRect(page1.Width/11.9, -710, page1.Width, page1.Height), XStringFormats.BottomLeft);
+                gfx.DrawString("Straße", font, XBrushes.Blue, new XRect(page1.Width/11.9, -695, page1.Width, page1.Height), XStringFormats.BottomLeft);
+                gfx.DrawString("PLZ+Ort", font, XBrushes.Blue, new XRect(page1.Width/11.9, -680, page1.Width, page1.Height), XStringFormats.BottomLeft);
+                
+                
+                
                 
                 
                 
@@ -87,6 +113,7 @@ namespace test_pdf
             }
            
             outputDocument.Save("C:\\Users\\Lauritz Abel\\Desktop\\TestPDF\\Output.pdf");
+            
         }
     }
 }
