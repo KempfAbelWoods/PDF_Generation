@@ -69,7 +69,7 @@ namespace test_pdf
                                                        
                 // Create a font
                 XFont font = new XFont("Verdana", 10);
-                                                       
+                XFont fontgroß = new XFont("Verdana", 20);                                      
                 // Position
                 for (int i = 0; i < 13; i++)
                 {
@@ -101,12 +101,16 @@ namespace test_pdf
                 gfx.DrawString("Straße", font, XBrushes.Blue, new XRect(page1.Width/11.9, -695, page1.Width, page1.Height), XStringFormats.BottomLeft);
                 gfx.DrawString("PLZ+Ort", font, XBrushes.Blue, new XRect(page1.Width/11.9, -680, page1.Width, page1.Height), XStringFormats.BottomLeft);
                 
+               // Rechnungsnummer 
+                gfx.DrawString("2023xxx", fontgroß, XBrushes.Blue, new XRect(page1.Width/3.3, -577, page1.Width, page1.Height), XStringFormats.BottomLeft); 
                 
                 
+                //Lieferdatum
+                gfx.DrawString("Lieferdatum", font, XBrushes.Blue, new XRect(page1.Width/2.06, -630, page1.Width, page1.Height), XStringFormats.BottomLeft);
                 
                 
-                
-                
+                //Rechnungsdatum 
+                gfx.DrawString("Rechnungsdatum", font, XBrushes.Blue, new XRect(page1.Width/1.363, -630, page1.Width, page1.Height), XStringFormats.BottomLeft);
                 MessageBox.Show("PDF wurde erstellt");
               
 
