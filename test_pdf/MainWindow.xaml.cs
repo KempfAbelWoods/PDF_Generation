@@ -71,31 +71,19 @@ namespace test_pdf
                 XFont font = new XFont("Verdana", 10);
                                                        
                 // Position
-                gfx.DrawString("Zeile 1", font, XBrushes.Black, new XRect(-225, -25, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("Zeile 2", font, XBrushes.Black, new XRect(-225, -10, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("Zeile 3", font, XBrushes.Black, new XRect(-225, 5, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("Zeile 4", font, XBrushes.Black, new XRect(-225, 20, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("Zeile 5", font, XBrushes.Black, new XRect(-225, 35, page1.Width, page1.Height), XStringFormats.Center);   
-                gfx.DrawString("Zeile 6", font, XBrushes.Black, new XRect(-225, 50, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("Zeile 7", font, XBrushes.Black, new XRect(-225, 65, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("Zeile 8", font, XBrushes.Black, new XRect(-225, 80, page1.Width, page1.Height), XStringFormats.Center); 
-                gfx.DrawString("Zeile 9", font, XBrushes.Black, new XRect(-225, 95, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("Zeile 10",font, XBrushes.Black, new XRect(-225, 110, page1.Width, page1.Height), XStringFormats.Center);
+                for (int i = 0; i < 11; i++)
+                {
+                    gfx.DrawString("Position"+i.ToString(), font, XBrushes.Black, new XRect(page1.Width/12, -490+(i*15), page1.Width, page1.Height), XStringFormats.BottomLeft);
+                }
+                
+               
                 
                 
-                // Menge
-                gfx.DrawString("1", font, XBrushes.Black, new XRect(20, -25, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("2", font, XBrushes.Black, new XRect(20, -10, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("3", font, XBrushes.Black, new XRect(20, 5, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("4", font, XBrushes.Black, new XRect(20, 20, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("5", font, XBrushes.Black, new XRect(20, 35, page1.Width, page1.Height), XStringFormats.Center);   
-                gfx.DrawString("6", font, XBrushes.Black, new XRect(20, 50, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("7", font, XBrushes.Black, new XRect(20, 65, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("8", font, XBrushes.Black, new XRect(20, 80, page1.Width, page1.Height), XStringFormats.Center); 
-                gfx.DrawString("9", font, XBrushes.Black, new XRect(20, 95, page1.Width, page1.Height), XStringFormats.Center);
-                gfx.DrawString("10",font, XBrushes.Black, new XRect(20, 110, page1.Width, page1.Height), XStringFormats.Center);  
                 
                 
+                MessageBox.Show("PDF wurde erstellt");
+              
+
             }
            
             outputDocument.Save("C:\\Users\\Lauritz Abel\\Desktop\\TestPDF\\Output.pdf");
